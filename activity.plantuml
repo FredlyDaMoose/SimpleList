@@ -1,0 +1,13 @@
+@startuml
+
+start
+
+:User enter list data;
+
+if (Is integer data?) then (yes)
+    :Use SimpleIntegerList list;
+else (no)
+    :Use SimpleStringList list;
+endif
+
+@enduml
