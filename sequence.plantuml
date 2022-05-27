@@ -1,0 +1,13 @@
+@startuml
+
+actor User
+
+User -> SimpleListRunner : Start Application
+User <- SimpleListRunner : Prompt user for list input
+User -> SimpleListRunner : Enter list input
+User <- SimpleListRunner : Prompt user for operation input
+User -> SimpleListRunner : Enter operation input
+User <- SimpleListRunner : Display result
+
+
+@enduml
