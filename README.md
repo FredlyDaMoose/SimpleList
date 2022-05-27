@@ -4,4 +4,5 @@
 
 ### New Features
 -Sum, average, min, and max functionality
+
 -Integer recognition and automatic handling 
