@@ -1,0 +1,31 @@
+@startuml
+
+abstract SimpleList {
+    # output : String
+
+    + void {abstract} sum()
+    + void {abstract} average()
+    + void {abstract} max()
+    + void {abstract} min()
+    + String {abstract} getOutput()
+}
+
+class SimpleIntegerList {
+    - input : int[]
+}
+
+SimpleList <|-- SimpleIntegerList 
+
+class SimpleStringList {
+    - input : String[]
+
+}
+
+SimpleList <|-- SimpleStringList 
+
+class SimpleListRunner {
+    + {static} void main(String[] args)
+    - {static} boolean parseIntegerArrayList(Collection<String> inStringArray, ArrayList<Integer> inIntegerArrayList)
+}
+
+@enduml
