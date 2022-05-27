@@ -1,0 +1,10 @@
+@startuml
+
+actor :User: as user
+user --> (enter list data)
+user --> (sum)
+user --> (average)
+user --> (max)
+user --> (min)
+
+@enduml
